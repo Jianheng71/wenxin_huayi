@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="下载文心画意 AI Skill 的平台部署包。">
+  <title>文心画意 · AI Skill 部署</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #29231f; background: #f6f1e8; }
+    body { max-width: 960px; margin: 0 auto; padding: 48px 20px; }
+    header { margin-bottom: 32px; }
+    h1 { margin-bottom: 8px; font-family: Georgia, serif; font-size: clamp(2rem, 5vw, 3.2rem); }
+    p { line-height: 1.7; }
+    .notice { padding: 14px 18px; border-left: 4px solid #9b4e32; background: #fffaf2; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+    article { padding: 20px; border: 1px solid #ded3c4; border-radius: 12px; background: #fffdf9; }
+    article h2 { margin: 0 0 8px; font-size: 1.15rem; }
+    article p { min-height: 3.5em; margin: 0 0 18px; color: #5e554d; font-size: .95rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    a { display: inline-block; padding: 9px 13px; border-radius: 7px; color: white; background: #7d3829; text-decoration: none; }
+    a.secondary { color: #513c30; background: #eee4d8; }
+    a:focus-visible { outline: 3px solid #d19442; outline-offset: 2px; }
+    footer { margin-top: 28px; color: #665b52; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>文心画意</h1>
+    <p>选择 AI 平台，下载对应部署包，按包内说明添加技能指令。</p>
+    <p class="notice"><strong>说明：</strong>下载和打开平台是一键完成的；各平台的登录、创建、保存或发布仍须由你在平台内操作。平台能力、界面与账号权限可能不同，本页面不会代你登录或发布。</p>
+  </header>
+  <main class="grid" aria-label="AI 平台部署包">
+    <article><h2>Claude</h2><p>包含 Skill 文件结构及备用自定义指令。</p><div class="actions"><a href="dist/wenxin-huayi-claude.zip" download>下载部署包</a><a class="secondary" href="https://claude.ai/" target="_blank" rel="noopener">打开 Claude</a></div></article>
+    <article><h2>豆包</h2><p>包含可粘贴到智能体角色设定的完整指令。</p><div class="actions"><a href="dist/wenxin-huayi-doubao.zip" download>下载部署包</a><a class="secondary" href="https://www.doubao.com/" target="_blank" rel="noopener">打开豆包</a></div></article>
+    <article><h2>通义千问</h2><p>包含智能体自定义指令和对话提示词用法。</p><div class="actions"><a href="dist/wenxin-huayi-qwen.zip" download>下载部署包</a><a class="secondary" href="https://www.qianwen.com/" target="_blank" rel="noopener">打开通义千问</a></div></article>
+    <article><h2>Coze / 扣子</h2><p>包含 Bot 人设提示词和能力配置说明。</p><div class="actions"><a href="dist/wenxin-huayi-coze.zip" download>下载部署包</a><a class="secondary" href="https://www.coze.cn/" target="_blank" rel="noopener">打开 Coze</a></div></article>
+    <article><h2>Kimi</h2><p>包含可用于自定义智能体或新对话的指令。</p><div class="actions"><a href="dist/wenxin-huayi-kimi.zip" download>下载部署包</a><a class="secondary" href="https://www.kimi.com/" target="_blank" rel="noopener">打开 Kimi</a></div></article>
+    <article><h2>腾讯元宝</h2><p>包含可用于自定义智能体或新对话的指令。</p><div class="actions"><a href="dist/wenxin-huayi-yuanbao.zip" download>下载部署包</a><a class="secondary" href="https://yuanbao.tencent.com/" target="_blank" rel="noopener">打开腾讯元宝</a></div></article>
+    <article><h2>ChatGPT</h2><p>包含可粘贴到 GPT Instructions 的完整指令。</p><div class="actions"><a href="dist/wenxin-huayi-chatgpt.zip" download>下载部署包</a><a class="secondary" href="https://chatgpt.com/gpts/editor" target="_blank" rel="noopener">打开 GPT 编辑器</a></div></article>
+  </main>
+  <footer>所有包均由 <code>SKILL.md</code> 构建。平台未提供的联网搜索或图像生成能力不会被伪装成可用。</footer>
+</body>
+</html>
