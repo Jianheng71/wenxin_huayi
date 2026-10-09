@@ -21,6 +21,16 @@
 
 支持远程 MCP 的 AI 客户端也可以连接自托管的 [Cloudflare MCP 服务](wenxin-huayi-skill/mcp-server/README.md)，连接后调用文学来源抓取、六维评分整理与绘画提示词工具。需用户自行部署并在 AI 平台设置 MCP 地址；并非所有平台都支持远程 MCP。
 
+### 已部署的 MCP 服务
+
+```text
+https://wenxin-huayi-mcp.jianhenli2-c.workers.dev/mcp
+```
+
+这是一个使用 **Streamable HTTP** 的远程 MCP 地址，不是普通聊天提示词或通用 REST API。仅能在提供“远程 MCP / 自定义连接器”功能的 AI 客户端中添加；**不是所有 AI 平台都支持**，是否可用还取决于平台版本、账号和地区。连接后，客户端仍需提供网页搜索能力来发现候选；图片生成取决于客户端自身的图像工具。
+
+注意：该服务目前未启用用户认证，任何获得此地址的人都可以调用公开工具。不要通过它提交私密资料或密钥。若地址失效，可按 [MCP 部署说明](wenxin-huayi-skill/mcp-server/README.md)自行部署。
+
 ## 6维画面感评分标准
 
 每个维度按0-2分评定，总分12分；只保留8分以上的候选句。
