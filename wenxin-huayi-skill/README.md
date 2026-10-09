@@ -9,10 +9,15 @@ wenxin-huayi-skill/
 ├── README.md
 ├── SKILL.md
 ├── deploy.html
-└── build_packages.py
+├── build_packages.py
+└── mcp-server/
+    ├── README.md
+    ├── package.json
+    ├── wrangler.toml
+    └── src/index.ts
 ```
 
-项目无需下载语料、数据库或第三方依赖。构建器使用 Python 标准库生成各平台独立 ZIP 包。
+无需下载语料或数据库。平台 ZIP 构建器只使用 Python 标准库；MCP 服务使用下方 `mcp-server/` 中的 npm 依赖。
 
 ## 构建与部署
 
@@ -27,6 +32,23 @@ python3 build_packages.py
 部署需要用户在平台内登录、创建助手并粘贴指令或上传 Skill。当前各平台的导入接口、权限和发布流程不统一，本项目不会假称可从本地直接替用户发布，也不会收集账号凭据。ChatGPT 的 GPT 创建等能力可能受账号套餐和地区限制；若平台不支持自定义指令，可将指令作为每次对话的首条提示词。
 
 `deploy.html` 是静态下载入口；部署到网页托管服务时，将此目录作为站点根目录发布即可。生成的 ZIP 必须与页面一起部署。
+
+## MCP 服务部署（连接一次，后续由 AI 调用）
+
+项目还提供 Cloudflare Workers 上的无状态远程 MCP 服务。连接成功后，兼容 MCP 的 AI 客户端可以调用文学流程指南、白名单来源抓取、六维评分汇总和英文绘画提示词整理工具。MCP 不会绕过平台权限自动安装，也不代表七个平台都支持远程 MCP；用户需要先在目标 AI 的连接器/工具设置中添加 MCP 地址。AI 平台仍需提供网页搜索以发现候选；是否能生成图片取决于该平台自身的图像工具。
+
+在 Cloudflare 账户部署：
+
+```bash
+cd mcp-server
+npm install
+npx wrangler login
+npm run deploy
+```
+
+部署后地址形如 `https://wenxin-huayi-mcp.<你的 Cloudflare 子域>.workers.dev/mcp`。将该地址添加到 AI 客户端的远程 MCP 连接设置中；连接成功后测试调用 `get_wenxin_huayi_guide`。部分只支持本地 MCP 配置的客户端需要本机代理（如 `mcp-remote`）；有些客户端暂不支持用户自定义 MCP。发布者需自行管理 Cloudflare 账户和部署权限。
+
+服务只开放只读白名单网页抓取和提示词整理，不登录文学网站、不访问白名单外地址、不跟随重定向，也不调用图像生成 API。来源抓取有8秒超时和128KB上限。该 MCP endpoint 不要求用户身份验证，不应添加私密数据、写操作或账号密钥；公开部署后任何人都能调用这些公开能力。
 
 用户可以提供主题、情绪或构图偏好，例如：
 
