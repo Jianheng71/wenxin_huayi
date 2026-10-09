@@ -7,13 +7,13 @@
 
 | 平台 | 安装包 |
 | --- | --- |
-| Claude | [下载 wenxin-huayi-claude.zip](wenxin-huayi-skill/dist/wenxin-huayi-claude.zip?raw=1) |
-| 豆包 | [下载 wenxin-huayi-doubao.zip](wenxin-huayi-skill/dist/wenxin-huayi-doubao.zip?raw=1) |
-| 通义千问 | [下载 wenxin-huayi-qwen.zip](wenxin-huayi-skill/dist/wenxin-huayi-qwen.zip?raw=1) |
-| Coze / 扣子 | [下载 wenxin-huayi-coze.zip](wenxin-huayi-skill/dist/wenxin-huayi-coze.zip?raw=1) |
-| Kimi | [下载 wenxin-huayi-kimi.zip](wenxin-huayi-skill/dist/wenxin-huayi-kimi.zip?raw=1) |
-| 腾讯元宝 | [下载 wenxin-huayi-yuanbao.zip](wenxin-huayi-skill/dist/wenxin-huayi-yuanbao.zip?raw=1) |
-| ChatGPT | [下载 wenxin-huayi-chatgpt.zip](wenxin-huayi-skill/dist/wenxin-huayi-chatgpt.zip?raw=1) |
+| Claude | [下载 wenxin-huayi-claude.zip](https://raw.githubusercontent.com/Jianheng71/wenxin_huayi/main/wenxin-huayi-skill/dist/wenxin-huayi-claude.zip) |
+| 豆包 | [下载 wenxin-huayi-doubao.zip](https://raw.githubusercontent.com/Jianheng71/wenxin_huayi/main/wenxin-huayi-skill/dist/wenxin-huayi-doubao.zip) |
+| 通义千问 | [下载 wenxin-huayi-qwen.zip](https://raw.githubusercontent.com/Jianheng71/wenxin_huayi/main/wenxin-huayi-skill/dist/wenxin-huayi-qwen.zip) |
+| Coze / 扣子 | [下载 wenxin-huayi-coze.zip](https://raw.githubusercontent.com/Jianheng71/wenxin_huayi/main/wenxin-huayi-skill/dist/wenxin-huayi-coze.zip) |
+| Kimi | [下载 wenxin-huayi-kimi.zip](https://raw.githubusercontent.com/Jianheng71/wenxin_huayi/main/wenxin-huayi-skill/dist/wenxin-huayi-kimi.zip) |
+| 腾讯元宝 | [下载 wenxin-huayi-yuanbao.zip](https://raw.githubusercontent.com/Jianheng71/wenxin_huayi/main/wenxin-huayi-skill/dist/wenxin-huayi-yuanbao.zip) |
+| ChatGPT | [下载 wenxin-huayi-chatgpt.zip](https://raw.githubusercontent.com/Jianheng71/wenxin_huayi/main/wenxin-huayi-skill/dist/wenxin-huayi-chatgpt.zip) |
 
 每个包内包含平台对应的部署说明和 `INSTRUCTIONS.md`。平台登录、创建智能体、保存或发布需要用户在平台内完成；具体功能受平台、账号及地区支持情况限制。
 
