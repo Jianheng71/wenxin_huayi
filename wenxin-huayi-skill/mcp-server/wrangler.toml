@@ -1,0 +1,6 @@
+name = "wenxin-huayi-mcp"
+main = "src/index.ts"
+compatibility_date = "2026-10-09"
+
+[observability]
+enabled = true

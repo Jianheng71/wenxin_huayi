@@ -28,6 +28,7 @@
     <h1>文心画意</h1>
     <p>选择 AI 平台，下载对应部署包，按包内说明添加技能指令。</p>
     <p class="notice"><strong>说明：</strong>下载和打开平台是一键完成的；各平台的登录、创建、保存或发布仍须由你在平台内操作。平台能力、界面与账号权限可能不同，本页面不会代你登录或发布。</p>
+    <p class="notice"><strong>MCP 连接：</strong>如果你的 AI 平台支持远程 MCP，可先按<a href="mcp-server/README.md">部署说明</a>部署 Cloudflare Worker，再在平台的连接器设置中添加 Worker 的 <code>/mcp</code> 地址。连接一次后即可调用工具；是否支持及其设置步骤因平台而异。MCP 不会自动创建或发布平台内的 Skill。</p>
   </header>
   <main class="grid" aria-label="AI 平台部署包">
     <article><h2>Claude</h2><p>包含 Skill 文件结构及备用自定义指令。</p><div class="actions"><a href="dist/wenxin-huayi-claude.zip" download>下载部署包</a><a class="secondary" href="https://claude.ai/" target="_blank" rel="noopener">打开 Claude</a></div></article>
