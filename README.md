@@ -1,6 +1,24 @@
 # wenxin_huayi
 我们总觉得AI画的图很直白，没味道，是因为它没读过书。  王维写雨后是“明月松间照，清泉石上流”，朱自清写月光是“如流水一般静静地泻在叶子上”，汪曾祺写小院是“苔痕上阶绿”。这些句子本身就是顶级的绘画prompt。  文心画意做的就是给AI加一个文学眼睛。先读书，再选镜头，最后才画。按6个维度选出最有画面感的那一句，让AI画的不再是照片，而是诗。
 
+## AI Skill 安装包
+
+选择平台下载对应 ZIP 包，解压后按包内 `README.md` 操作。Claude 包包含 Skill 文件结构；其他平台提供可复制到智能体/自定义指令中的完整提示词。
+
+| 平台 | 安装包 |
+| --- | --- |
+| Claude | [下载 wenxin-huayi-claude.zip](wenxin-huayi-skill/dist/wenxin-huayi-claude.zip?raw=1) |
+| 豆包 | [下载 wenxin-huayi-doubao.zip](wenxin-huayi-skill/dist/wenxin-huayi-doubao.zip?raw=1) |
+| 通义千问 | [下载 wenxin-huayi-qwen.zip](wenxin-huayi-skill/dist/wenxin-huayi-qwen.zip?raw=1) |
+| Coze / 扣子 | [下载 wenxin-huayi-coze.zip](wenxin-huayi-skill/dist/wenxin-huayi-coze.zip?raw=1) |
+| Kimi | [下载 wenxin-huayi-kimi.zip](wenxin-huayi-skill/dist/wenxin-huayi-kimi.zip?raw=1) |
+| 腾讯元宝 | [下载 wenxin-huayi-yuanbao.zip](wenxin-huayi-skill/dist/wenxin-huayi-yuanbao.zip?raw=1) |
+| ChatGPT | [下载 wenxin-huayi-chatgpt.zip](wenxin-huayi-skill/dist/wenxin-huayi-chatgpt.zip?raw=1) |
+
+每个包内包含平台对应的部署说明和 `INSTRUCTIONS.md`。平台登录、创建智能体、保存或发布需要用户在平台内完成；具体功能受平台、账号及地区支持情况限制。
+
+还可以查看[完整技能定义](wenxin-huayi-skill/SKILL.md)、[部署说明](wenxin-huayi-skill/README.md)或[构建部署包的脚本](wenxin-huayi-skill/build_packages.py)。
+
 ## 6维画面感评分标准
 
 每个维度按0-2分评定，总分12分；只保留8分以上的候选句。
