@@ -19,7 +19,7 @@
 
 还可以查看[完整技能定义](wenxin-huayi-skill/SKILL.md)、[部署说明](wenxin-huayi-skill/README.md)或[构建部署包的脚本](wenxin-huayi-skill/build_packages.py)。
 
-支持远程 MCP 的 AI 客户端也可以连接自托管的 [Cloudflare MCP 服务](wenxin-huayi-skill/mcp-server/README.md)，连接后调用文学来源抓取、六维评分整理与绘画提示词工具。需用户自行部署并在 AI 平台设置 MCP 地址；并非所有平台都支持远程 MCP。
+支持远程 MCP 的 AI 客户端也可以连接 [Cloudflare MCP 服务](wenxin-huayi-skill/mcp-server/README.md)，调用文学来源抓取、六维评分整理与绘画提示词工具。可按[新手部署说明书](wenxin-huayi-skill/DEPLOYMENT_GUIDE.md)逐步部署。需在 AI 平台设置 MCP 地址；并非所有平台都支持远程 MCP。
 
 ### 已部署的 MCP 服务
 
